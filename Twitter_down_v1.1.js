@@ -11,6 +11,11 @@ var url="https://twdown.net/download.php";
 //得知这是get方法，其中的搜索框会重定向到https://twdown.net/download.php，这里才是
 //post提交表单的地方
 
+var file =open("/storage/emulated/0/脚本/ADM.txt","w");
+file.write('');
+file.flush();
+file.close();
+
 while(true){
     var lingmiaobi = text("复制推文链接").findOne();
     //text中无值，选取desc，用findOne()一直找，形成阻塞，不选取findOnce()
